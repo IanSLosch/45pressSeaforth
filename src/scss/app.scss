@@ -1,0 +1,53 @@
+@use 'colors.scss';
+@use 'fonts.scss';
+@use 'breakpoints.scss';
+
+.background {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5%;
+}
+
+p {
+  font-family: "Poppins";
+  font-weight: normal;
+}
+
+.font-bold {
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.font-medium {
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.font-regular {
+  font-family: "Poppins";
+  font-weight: normal;
+}
+
+.font-light {
+  font-family: "Poppins";
+  font-weight: 300;
+}
+
+.section-title {
+  letter-spacing: 0.5em;
+}
+

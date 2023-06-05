@@ -1,0 +1,6 @@
+@use './colors.scss';
+@use './breakpoints.scss';
+
+.videos-background-color {
+  background-color: colors.$tertiary-color;
+}
