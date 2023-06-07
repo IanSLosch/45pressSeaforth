@@ -6,6 +6,7 @@ import fetchVideoData from '../assets/images/blackbox.png'
 const videoData = [0, 1, 2, 3]
 
 const RenderVideos = () => {
+
   return videoData.map((data) => {
     return (
       <img src={fetchVideoData} className='embedded-video' key={data} alt='video' />
@@ -19,13 +20,13 @@ const Videos = () => {
     <div>
       <div className='videos-background-color background'>
         <div className='content-container' >
-          <h3 className='section-title videos-title'>videos</h3>
+          <p className='section-title videos-title'>videos</p>
           <div className='video-content-container' >
-            <img src={leftArrow} className='left-arrow' alt='arrow left' />
+            <img src={leftArrow} className='arrow' alt='arrow left' />
             <div className='selected-video-content-container'>
               <RenderVideos />
             </div>
-            <img src={rightArrow} className='right-arrow' alt='arrow right' />
+            <img src={rightArrow} className='arrow' alt='arrow right' />
           </div>
         </div>
       </div>

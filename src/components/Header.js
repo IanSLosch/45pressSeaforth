@@ -48,19 +48,17 @@ const Header = () => {
               <button className='font-regular'>submit</button>
             </div>
           </div>
-          {/* map to anchor tags with urls */}
           <Svg />
         </div>
         {!isOpen && (
           <div className='toggle-menu-container' >
-            <img className='toggle-menu-button' src={toggleMenuIcon} onClick={toggleDropdown} alt='toggle menu' />
+            <img src={toggleMenuIcon} onClick={toggleDropdown} alt='toggle menu' />
           </div>
         )}
         {isOpen && (
           <div className="dropdown-content">
             <div className='toggle-menu-container' >
-
-              <img className='toggle-menu-button close-menu-toggle' src={toggleMenuIcon} onClick={toggleDropdown} alt='toggle menu' />
+              <img src={toggleMenuIcon} onClick={toggleDropdown} alt='toggle menu' />
             </div>
             <ul className='mobile-links font-regular'>
               <li>music</li>

@@ -4,6 +4,7 @@ import backgroundImage from '../assets/images/tourdates-bg.png'
 import { TOUR_DATA } from '../assets/data/TOUR_DATES'
 
 const TourData = () => {
+
   return TOUR_DATA.map((show, index) => {
     return (
       <div className='show-container' key={index} >
@@ -12,26 +13,24 @@ const TourData = () => {
         </div>
         <div className='show-details-container' >
           <div>
-            <p className='font-light schedule-font-size' >{show.showInfo}</p>
+            <p className='font-light' >{show.showInfo}</p>
           </div>
           <div className='show-details-state-tickets'>
             <div className='location'>
-              <p className='font-light schedule-font-size' >{show.location}</p>
+              <p className='font-light' >{show.location}</p>
             </div>
             <div className='tickets'>
-              <p className='font-light schedule-font-size' >{show.tickets}</p>
+              <p className='font-light' >{show.tickets}</p>
             </div>
           </div>
         </div>
         <div className='buy-tickets-button-container'>
-          <button className='buy-tickets-button'>tickets</button>
+          <button>tickets</button>
         </div>
       </div>
     )
   })
 }
-
-
 
 const TourDates = () => {
 
@@ -48,8 +47,8 @@ const TourDates = () => {
             <TourData />
           </div>
           <div className='view-more-container'>
-            <button className='view-more-button'>
-              <span className='font-medium view-more-button-text'>
+            <button>
+              <span className='font-medium '>
                 view more
               </span>
             </button>

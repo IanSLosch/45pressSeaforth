@@ -6,9 +6,6 @@ import musicApp from '../assets/images/music-app.png'
 import leftArrow from '../assets/images/arrow-left.png'
 import rightArrow from '../assets/images/arrow-right.png'
 
-
-
-
 const Music = () => {
 
   return (

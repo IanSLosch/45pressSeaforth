@@ -40,6 +40,7 @@
 }
 
 .links {
+  padding-top: 1%;
   display: none;
   color: #2A2E39;
 }
@@ -109,6 +110,7 @@
 
 .toggle-menu-container {
   margin-left: auto;
+  margin-bottom: auto;
 }
 @media (min-width: 768px) {
   .toggle-menu-container {
@@ -119,9 +121,6 @@
 .toggle-menu-container img {
   width: 35px;
   height: 35px;
-}
-
-.toggle-menu-button {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
@@ -132,11 +131,6 @@
   flex-direction: column;
   align-items: flex-end;
   width: 100%;
-}
-
-.close-menu-toggle {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .inner-menu-icons {

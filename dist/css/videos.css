@@ -22,13 +22,7 @@
   width: 100%;
 }
 
-.left-arrow {
-  width: 20px;
-  height: auto;
-  padding: 10px;
-}
-
-.right-arrow {
+.arrow {
   width: 20px;
   height: auto;
   padding: 10px;

@@ -46,7 +46,7 @@
   width: 70%;
 }
 
-.schedule-font-size {
+.show-details-container p {
   font-size: smaller;
 }
 
@@ -71,7 +71,7 @@
 
 }
 
-.buy-tickets-button {
+.buy-tickets-button-container button {
   background-color: colors.$tertiary-color;
   color: colors.$tertiary-color;
   border-width: 0;
@@ -94,7 +94,7 @@
   }
 }
 
-.view-more-button {
+.view-more-container button {
   background-color: colors.$tertiary-color;
   border-width: 0;
   height: 37px;
@@ -103,6 +103,6 @@
   margin-bottom: 3%;
 }
 
-.view-more-button-text {
+.view-more-container span {
   letter-spacing: 0.3em;
 }
