@@ -35,10 +35,34 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 5%;
+  width: 100vw;
+  height: auto;
+  padding: 3%;
+}
+
+.section-title {
+  letter-spacing: 0.3em;
+  font-size: larger;
+  font-family: "Poppins";
+  font-weight: 400;
 }
 
 p {
+  font-family: "Poppins";
+  font-weight: normal;
+}
+
+h1 {
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+h3 {
   font-family: "Poppins";
   font-weight: normal;
 }
@@ -61,10 +85,6 @@ p {
 .font-light {
   font-family: "Poppins";
   font-weight: 300;
-}
-
-.section-title {
-  letter-spacing: 0.5em;
 }
 
 /*# sourceMappingURL=app.css.map */

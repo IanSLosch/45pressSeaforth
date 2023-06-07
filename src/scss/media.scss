@@ -1,7 +1,42 @@
 @use './colors.scss';
+@use './breakpoints.scss';
 
+.media-content-container {
+  margin-top: 4%;
+  width: 100%;
 
+  @include breakpoints.respond-to(sm) {
+    width: 90%;
+  }
 
-.media-background-overlay {
-  background-color: colors.$secondary-color;
+  @include breakpoints.respond-to(lg) {
+    width: 80%;
+  }
+}
+
+.media-background {
+  background-repeat: repeat-y;
+}
+
+.image-layout {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.insta-image {
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 1.5%;
+
+  @include breakpoints.respond-to(sm) {
+    width: 47%;
+  }
+
+  @include breakpoints.respond-to(lg) {
+    width: 28%;
+  }
 }

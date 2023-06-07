@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <nav className='navbar'>
       <div className='logo-container'>
-        <img src={Logo} className='logo'></img>
+        <img src={Logo} className='logo' alt='Seaforth Logo'></img>
       </div>
       <div className='navigation-container'>
         <div className='navigation-wrapper'>
@@ -56,14 +56,14 @@ const Header = () => {
         </div>
         {!isOpen && (
           <div className='toggle-menu-container' >
-            <img className='toggle-menu-button' src={toggleMenuIcon} onClick={toggleDropdown} />
+            <img className='toggle-menu-button' src={toggleMenuIcon} onClick={toggleDropdown} alt='toggle menu' />
           </div>
         )}
         {isOpen && (
           <div className="dropdown-content">
             <div className='toggle-menu-container' >
 
-              <img className='toggle-menu-button close-menu-toggle' src={toggleMenuIcon} onClick={toggleDropdown} />
+              <img className='toggle-menu-button close-menu-toggle' src={toggleMenuIcon} onClick={toggleDropdown} alt='toggle menu' />
             </div>
             <ul className='mobile-links font-regular'>
               <li>music</li>

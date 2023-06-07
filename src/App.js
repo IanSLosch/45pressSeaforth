@@ -15,7 +15,7 @@ function App() {
       <Music />
       <TourDates />
       <Videos />
-      {/* <About /> */}
+      <About />
       <Media />
     </>
   );

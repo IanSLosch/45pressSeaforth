@@ -1,3 +1,109 @@
+.tourdates-background-image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 35%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
 
+.tour-dates-font-color {
+  color: #2A2E39;
+}
+
+.schedule-container {
+  margin-top: 4%;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .schedule-container {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .schedule-container {
+    width: 60%;
+  }
+}
+
+.show-container {
+  display: flex;
+  padding: 2%;
+}
+
+.date-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 20%;
+  margin-right: 2%;
+}
+
+.show-details-container {
+  display: block;
+  width: 70%;
+}
+
+.schedule-font-size {
+  font-size: smaller;
+}
+
+.show-details-state-tickets {
+  display: block;
+}
+@media (min-width: 992px) {
+  .show-details-state-tickets {
+    display: flex;
+  }
+}
+
+.location {
+  width: 30%;
+}
+
+.buy-tickets-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 15%;
+}
+
+.buy-tickets-button {
+  background-color: #B8C591;
+  color: #B8C591;
+  border-width: 0;
+  height: 30px;
+  width: 75px;
+}
+
+.view-more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .view-more-container {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .view-more-container {
+    width: 60%;
+  }
+}
+
+.view-more-button {
+  background-color: #B8C591;
+  border-width: 0;
+  height: 35px;
+  width: 150px;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+.view-more-button-text {
+  letter-spacing: 0.3em;
+}
 
 /*# sourceMappingURL=tourdates.css.map */

@@ -1,5 +1,4 @@
 import '../scss/hero.scss'
-import '../scss/app.scss'
 import mainBanner from '../assets/images/Layer19.png'
 import background from '../assets/images/hero.png'
 

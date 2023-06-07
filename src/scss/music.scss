@@ -8,3 +8,97 @@
 .music-background-color {
   background-color: colors.$secondary-color;
 }
+
+.music-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  margin-top: 3%;
+  margin-bottom: 3%;
+
+  height: auto;
+  width: 100%;
+  @include breakpoints.respond-to(sm) {
+  width: 75%;
+  }
+}
+
+.selected-music-content-container {
+  display: block;
+
+  @include breakpoints.respond-to(sm) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.left-arrow {
+  width: 20px;
+  height: auto;
+  padding: 10px;
+}
+
+.right-arrow {
+  width: 20px;
+  height: auto;
+  padding: 10px;
+}
+
+.album-cover-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @include breakpoints.respond-to(sm) {
+    width: 60%;
+  }
+}
+
+.album-cover {
+  object-fit: contain;
+  width: 90%;
+}
+
+.player-social-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 10%;
+  width: 100%;
+  @include breakpoints.respond-to(sm) {
+    margin-top: 0;
+    width: 40%;
+  }
+}
+
+.player-container {
+  width: 60%;
+}
+
+.player {
+  object-fit: contain;
+  width: 100%;
+  margin-bottom: -3%;
+}
+
+.player-album-cover-container {
+  width: 60%;
+}
+
+.player-album-cover {
+  object-fit: contain;
+  width: 100%
+}
+
+.music-social-icons {
+  width: 90%;
+  height: auto;
+  margin: 7%;
+}
