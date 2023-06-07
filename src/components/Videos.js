@@ -19,7 +19,7 @@ const Videos = () => {
     <div>
       <div className='videos-background-color background'>
         <div className='content-container' >
-          <h3 className='section-title'>videos</h3>
+          <h3 className='section-title videos-title'>videos</h3>
           <div className='video-content-container' >
             <img src={leftArrow} className='left-arrow' alt='arrow left' />
             <div className='selected-video-content-container'>

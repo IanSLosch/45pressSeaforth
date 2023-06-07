@@ -12,15 +12,17 @@
 }
 
 .tour-dates-font-color {
-  color: colors.$tourdates-font-color;
+  color: colors.$mid-black-font-color;
 }
 
 .schedule-container {
   margin-top: 4%;
   width: 100%;
+
   @include breakpoints.respond-to(sm) {
     width: 80%;
   }
+
   @include breakpoints.respond-to(lg) {
     width: 60%;
   }
@@ -50,10 +52,11 @@
 
 .show-details-state-tickets {
   display: block;
+
   @include breakpoints.respond-to(lg) {
     display: flex;
   }
-  
+
 }
 
 .location {
@@ -73,7 +76,7 @@
   color: colors.$tertiary-color;
   border-width: 0;
   height: 30px;
-  width: 75px;
+  width: 80px;
 }
 
 .view-more-container {
@@ -81,9 +84,11 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+
   @include breakpoints.respond-to(sm) {
     width: 80%;
   }
+
   @include breakpoints.respond-to(lg) {
     width: 60%;
   }
@@ -92,9 +97,9 @@
 .view-more-button {
   background-color: colors.$tertiary-color;
   border-width: 0;
-  height: 35px;
-  width: 150px;
-margin-top: 5%;
+  height: 37px;
+  width: 160px;
+  margin-top: 5%;
   margin-bottom: 3%;
 }
 

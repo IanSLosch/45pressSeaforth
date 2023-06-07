@@ -6,7 +6,7 @@ const RenderInsta = () => {
   return (
     INSTA.map((item, index) => {
       return (
-        <img className='insta-image' src={item} alt='instagram image' key={index} />
+        <img className='insta-image' src={item} alt='instagram' key={index} />
       )
     })
   )
@@ -20,7 +20,7 @@ const Media = () => {
         className='background media-background'
       >
         <div className='content-container' >
-        <p className='section-title'>@weareseaforth</p>
+        <p className='media-section-title font-regular'>@weareseaforth</p>
           <div className='media-content-container' >
             <div className='image-layout'>
               <RenderInsta />
