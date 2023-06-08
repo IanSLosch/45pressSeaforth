@@ -24,13 +24,14 @@
   width: 35%;
 
   @include breakpoints.respond-to(sm) {
-  max-height: 80px;
-  width: auto;
+    max-height: 80px;
+    width: auto;
   }
 }
 
 .navigation-wrapper {
   display: none;
+
   @include breakpoints.respond-to(md) {
     width: 100%;
     display: flex;
@@ -43,6 +44,7 @@
   padding-top: 1%;
   display: none;
   color: colors.$mid-black-font-color;
+
   @include breakpoints.respond-to(xl) {
     display: block;
   }
@@ -61,14 +63,14 @@ nav ul li a {
   color: colors.$mid-black-font-color;
 }
 
-nav ul li:hover a{
+nav ul li:hover a {
   color: colors.$tertiary-color;
   transform: scale(1.1);
 }
 
 nav ul li .active {
   color: colors.$mid-black-font-color;
-  
+
 }
 
 .social-icons-svg {
@@ -76,20 +78,21 @@ nav ul li .active {
   margin: 0;
 
   @include breakpoints.respond-to(md) {
-  margin: 1.5rem 5vw 0 1vw;
+    margin: 1.5rem 5vw 0 1vw;
   }
 }
 
 .email {
-  margin-left: auto;
-  width: 40vw;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 
   @include breakpoints.respond-to(md) {
     width: 30vw;
   }
 
   @include breakpoints.respond-to(xl) {
-  width: 20vw;
+    width: 20vw;
   }
 }
 
@@ -115,9 +118,10 @@ nav ul li .active {
 .email button {
   font-size: 0.7em;
   height: 28px;
-  width: 29%;
+  width: auto;
   background-color: colors.$tertiary-color;
   border-width: 0;
+  margin-right: 5px;
 }
 
 .email button:hover {
@@ -128,6 +132,7 @@ nav ul li .active {
 .toggle-menu-container {
   margin-left: auto;
   margin-bottom: auto;
+
   @include breakpoints.respond-to(md) {
     display: none;
   }
