@@ -1,17 +1,68 @@
+import { useState } from 'react'
 import '../scss/videos.scss'
 import leftArrow from '../assets/images/arrow-left.png'
 import rightArrow from '../assets/images/arrow-right.png'
 import fetchVideoData from '../assets/images/blackbox.png'
+import { Carousel } from 'react-responsive-carousel'
+import "react-responsive-carousel/lib/styles/carousel.min.css"
 
-const videoData = [0, 1, 2, 3]
+const videoDATA = [0, 1, 2, 3]
+const DATA = [0, 1, 2, 3]
 
-const RenderVideos = () => {
+const RenderCarousel = () => {
+  const [currentSlide, setCurrentSlide] = useState(0)
 
-  return videoData.map((data) => {
-    return (
-      <img src={fetchVideoData} className='embedded-video' key={data} alt='video' />
-    )
-  })
+  const handlePrevSlide = () => {
+    const prevSlide = (currentSlide - 1 + DATA.length) % DATA.length
+    setCurrentSlide(prevSlide)
+  }
+
+  const handleNextSlide = () => {
+    const nextSlide = (currentSlide + 1) % DATA.length
+    setCurrentSlide(nextSlide)
+  }
+
+  const handleVideoClick = (id) => {
+    console.log(`Your are watching video ${id}`)
+    window.location.href = 'https://www.youtube.com/channel/UCvBrvVkWsO6PeWr56JQe-Vw';
+  }
+
+  const RenderVideos = () => {
+
+    return videoDATA.map((data) => {
+      return (
+        <div onClick={() => handleVideoClick(data)} className='video-wrapper' key={data} >
+          <img src={fetchVideoData} className='embedded-video' alt='video' />
+        </div>
+      )
+    })
+  }
+
+  const RenderSlideData = () => {
+
+    return DATA.map((slide) => {
+      return (
+        <RenderVideos key={slide} />
+      )
+    })
+  }
+
+  return (
+    <>
+      <img src={leftArrow} className='arrow' alt='Previous Slide' onClick={handlePrevSlide} />
+      <Carousel
+        set showThumbs={false}
+        showArrows={false}
+        showStatus={false}
+        showIndicators={false}
+        selectedItem={currentSlide}
+        onChange={(index) => setCurrentSlide(index)}
+      >
+        {RenderSlideData()}
+      </Carousel>
+      <img src={rightArrow} className='arrow' alt='Next Slide' onClick={handleNextSlide} />
+    </>
+  )
 }
 
 const Videos = () => {
@@ -22,11 +73,9 @@ const Videos = () => {
         <div className='content-container' >
           <p className='section-title videos-title'>videos</p>
           <div className='video-content-container' >
-            <img src={leftArrow} className='arrow' alt='arrow left' />
             <div className='selected-video-content-container'>
-              <RenderVideos />
+              <RenderCarousel />
             </div>
-            <img src={rightArrow} className='arrow' alt='arrow right' />
           </div>
         </div>
       </div>

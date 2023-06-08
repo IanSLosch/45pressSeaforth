@@ -73,10 +73,10 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 4%;
   left: 0;
   right: 0;
   z-index: 2;
+  bottom: 4%;
 
   @include breakpoints.respond-to(md) {
     bottom: 6%;
@@ -90,13 +90,45 @@
 .read-more-button-container button {
   border-width: 0;
   background-color: colors.$tertiary-color;
-  pointer-events: auto;
+  pointer-events: all;
   padding: 10px 25px 10px 25px;
+  position: relative;
+  cursor: pointer;
 }
 
 .read-more-button-container span {
   letter-spacing: 0.3em;
   font-family: "Poppins";
   font-weight: 400;
-  color: #000000;
+  color: colors.$tertiary-color;
+}
+
+.read-more-button-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 160px;
+  background-color: transparent;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  cursor: pointer;
+  bottom: 4%;
+
+  @include breakpoints.respond-to(md) {
+    bottom: 6%;
+  }
+
+  @include breakpoints.respond-to(lg) {
+    bottom: 8%;
+  }
+}
+
+.read-more-button-overlay:hover {
+  background-color: colors.$mid-black-font-color;
+  color: colors.$tertiary-color;
 }

@@ -15,7 +15,7 @@
   margin-top: 4%;
   width: 100%;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .schedule-container {
     width: 80%;
   }
@@ -28,24 +28,57 @@
 
 .show-container {
   display: flex;
-  padding: 2%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8%;
+}
+@media (min-width: 768px) {
+  .show-container {
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 1%;
+    margin: 0;
+  }
 }
 
 .date-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  width: 20%;
-  margin-right: 2%;
+  align-items: center;
+  width: 110px;
+}
+@media (min-width: 768px) {
+  .date-container {
+    margin-right: 2%;
+  }
 }
 
 .show-details-container {
   display: block;
-  width: 70%;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .show-details-container {
+    width: 65%;
+  }
+}
+
+.show-details-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .show-details-container div {
+    display: block;
+    width: 100%;
+  }
 }
 
 .show-details-container p {
-  font-size: smaller;
+  font-size: 0.9em;
 }
 
 .show-details-state-tickets {
@@ -57,23 +90,25 @@
   }
 }
 
-.location {
-  width: 30%;
-}
-
 .buy-tickets-button-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  width: 15%;
+  align-items: center;
+  width: auto;
 }
 
 .buy-tickets-button-container button {
   background-color: #B8C591;
-  color: #B8C591;
+  color: #2A2E39;
   border-width: 0;
   height: 30px;
   width: 80px;
+}
+
+.buy-tickets-button-container button:hover {
+  cursor: pointer;
+  background-color: #2A2E39;
+  color: #B8C591;
 }
 
 .view-more-container {
@@ -82,7 +117,7 @@
   align-items: center;
   width: 100%;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .view-more-container {
     width: 80%;
   }
@@ -100,6 +135,12 @@
   width: 160px;
   margin-top: 5%;
   margin-bottom: 3%;
+}
+
+.view-more-container button:hover {
+  cursor: pointer;
+  background-color: #2A2E39;
+  color: #B8C591;
 }
 
 .view-more-container span {

@@ -3,29 +3,36 @@ import background from '../assets/images/paper-texture-bg.png'
 import backgroundImage from '../assets/images/tourdates-bg.png'
 import { TOUR_DATA } from '../assets/data/TOUR_DATES'
 
+const ticketmasterUrl = () => {
+  window.location.href = 'https://www.ticketmaster.com/seaforth-tickets/artist/2200501';
+}
+
 const TourData = () => {
 
   return TOUR_DATA.map((show, index) => {
+    const { date, showInfo, location } = show
+
     return (
       <div className='show-container' key={index} >
         <div className='date-container  font-bold' >
-          <p className='font-light' >{show.date}</p>
+          <p className='font-light' >{date}</p>
         </div>
         <div className='show-details-container' >
           <div>
-            <p className='font-light' >{show.showInfo}</p>
+            <p className='font-light' >{showInfo}</p>
           </div>
           <div className='show-details-state-tickets'>
             <div className='location'>
-              <p className='font-light' >{show.location}</p>
-            </div>
-            <div className='tickets'>
-              <p className='font-light' >{show.tickets}</p>
+              <p className='font-light' >{location}</p>
             </div>
           </div>
         </div>
         <div className='buy-tickets-button-container'>
-          <button>tickets</button>
+          <button onClick={() => alert(`You have purchased: ${showInfo} tickets in ${location} for ${date}.`)}>
+            <span className='font-regular'>
+              tickets
+            </span>
+          </button>
         </div>
       </div>
     )
@@ -42,12 +49,12 @@ const TourDates = () => {
       >
         <img src={backgroundImage} className='tourdates-background-image' alt='seaforth' />
         <div className='content-container' >
-          <p className='section-title tour-dates-font-color'>tour dates</p>
+          <p className='section-title tour-dates-font'>tour dates</p>
           <div className='schedule-container' >
             <TourData />
           </div>
           <div className='view-more-container'>
-            <button>
+            <button onClick={ticketmasterUrl}>
               <span className='font-medium '>
                 view more
               </span>

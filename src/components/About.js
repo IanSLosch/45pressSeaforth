@@ -9,8 +9,11 @@ const About = () => {
       <div className='about-background' >
         <div className='read-more-button-container'>
           <button>
-            <span >read more</span>
+            <span>read more</span>
           </button>
+        </div>
+        <div className="read-more-button-overlay" onClick={() => alert('You are now reading more...')}>
+          <p>read more</p>
         </div>
         <div
           style={{ backgroundImage: `url(${backgroundImage})` }}

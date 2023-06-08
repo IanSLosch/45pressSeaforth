@@ -32,16 +32,16 @@
   }
 }
 
-.left-arrow {
+.arrow {
   width: 20px;
   height: auto;
   padding: 10px;
+  transition: all .2s ease-in-out; 
+  cursor: pointer;
 }
 
-.right-arrow {
-  width: 20px;
-  height: auto;
-  padding: 10px;
+.arrow:hover {
+  transform: scale(1.3); 
 }
 
 .album-cover-container {
@@ -51,13 +51,12 @@
   align-items: center;
   width: 100%;
   @include breakpoints.respond-to(sm) {
-    width: 60%;
+    width: 55%;
   }
 }
 
 .album-cover {
   object-fit: contain;
-  width: 90%;
 }
 
 .player-social-container {
@@ -70,7 +69,9 @@
   width: 100%;
   @include breakpoints.respond-to(sm) {
     margin-top: 0;
-    width: 40%;
+    width: 45%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 }
 
@@ -81,7 +82,6 @@
 .player {
   object-fit: contain;
   width: 100%;
-  margin-bottom: -3%;
 }
 
 .player-album-cover-container {
@@ -94,7 +94,18 @@
 }
 
 .music-social-icons {
-  width: 90%;
-  height: auto;
+  display: flex;
+  justify-content: center;
   margin: 7%;
+}
+
+.social-icon {
+  display: flex;
+  max-width: 14%;
+  transition: all .2s ease-in-out; 
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
 }
