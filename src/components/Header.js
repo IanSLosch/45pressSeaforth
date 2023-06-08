@@ -42,16 +42,14 @@ const Header = () => {
   return (
     <nav className='navbar'>
       <div className='navigation-container'>
-        <a href='#' target='_blank' rel='noopener noreferrer'>
           <img src={Logo} className='logo' alt='Seaforth Logo' />
-        </a>
         <div className='navigation-wrapper'>
           <ul className='links font-bold'>
-            <li>music</li>
-            <li>tour</li>
-            <li>videos</li>
-            <li>about</li>
-            <li>store</li>
+            <li><a href="#music">music</a></li>
+            <li><a href="#tourdates">tour</a></li>
+            <li><a href="#videos">videos</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#media">store</a></li>
           </ul>
           <div className='email'>
             <p className='email-tag font-regular' >connect with us today</p>
@@ -73,11 +71,11 @@ const Header = () => {
               <img src={toggleMenuIcon} onClick={toggleDropdown} alt='toggle menu' />
             </div>
             <ul className='mobile-links font-regular'>
-              <li>music</li>
-              <li>tour</li>
-              <li>videos</li>
-              <li>about</li>
-              <li>store</li>
+              <li><a href="#music">music</a></li>
+              <li><a href="#tourdates">tour</a></li>
+              <li><a href="#videos">videos</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#media">store</a></li>
             </ul>
             <div className='email'>
               <input className='font-regular' type='email' placeholder='email address' />

@@ -65,11 +65,11 @@ const RenderCarousel = () => {
   )
 }
 
-const Videos = () => {
+const Videos = ({ id }) => {
 
   return (
-    <div>
-      <div className='videos-background-color background'>
+    <>
+      <div className='videos-background-color background' id={id} >
         <div className='content-container' >
           <p className='section-title videos-title'>videos</p>
           <div className='video-content-container' >
@@ -79,7 +79,7 @@ const Videos = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

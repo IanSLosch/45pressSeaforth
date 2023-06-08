@@ -2,11 +2,11 @@ import '../scss/about.scss'
 import backgroundImage from '../assets/images/about-bg.png'
 import seaforth from '../assets/images/seaforth-black.png'
 
-const About = () => {
+const About = ({ id }) => {
 
   return (
-    <div>
-      <div className='about-background' >
+    <>
+      <div className='about-background' id={id} >
         <div className='read-more-button-container'>
           <button>
             <span>read more</span>
@@ -30,7 +30,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

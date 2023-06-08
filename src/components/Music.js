@@ -83,11 +83,11 @@ const RenderCarousel = () => {
   )
 }
 
-const Music = () => {
+const Music = ({ id }) => {
 
   return (
-    <div>
-      <div className='music-background-color background' >
+    <>
+      <div className='music-background-color background' id={id} >
         <div className='content-container' >
           <p className='section-title'>music</p>
           <div className='music-content-container' >
@@ -95,7 +95,7 @@ const Music = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

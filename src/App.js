@@ -12,11 +12,11 @@ function App() {
     <>
       <Header />
       <Hero />
-      <Music />
-      <TourDates />
-      <Videos />
-      <About />
-      <Media />
+      <Music id='music' />
+      <TourDates id='tourdates' />
+      <Videos id='videos' />
+      <About id='about' />
+      <Media id='media' />
     </>
   );
 }

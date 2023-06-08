@@ -22,7 +22,6 @@
 .logo {
   margin-bottom: auto;
   width: 35%;
-  cursor: pointer;
 
   @include breakpoints.respond-to(sm) {
   max-height: 80px;
@@ -57,9 +56,19 @@
   cursor: pointer;
 }
 
-.links li:hover {
+nav ul li a {
+  text-decoration: none;
+  color: colors.$mid-black-font-color;
+}
+
+nav ul li:hover a{
   color: colors.$tertiary-color;
   transform: scale(1.1);
+}
+
+nav ul li .active {
+  color: colors.$mid-black-font-color;
+  
 }
 
 .social-icons-svg {

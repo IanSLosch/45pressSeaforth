@@ -39,13 +39,14 @@ const TourData = () => {
   })
 }
 
-const TourDates = () => {
+const TourDates = ({ id }) => {
 
   return (
     <>
       <div
         style={{ backgroundImage: `url(${background})` }}
         className='background'
+        id={id} 
       >
         <img src={backgroundImage} className='tourdates-background-image' alt='seaforth' />
         <div className='content-container' >

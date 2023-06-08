@@ -17,12 +17,13 @@ const RenderInsta = () => {
   )
 }
 
-const Media = () => {
+const Media = ({ id }) => {
   return (
     <>
       <div
         style={{ backgroundImage: `url(${background})` }}
         className='background media-background'
+        id={id} 
       >
         <div className='content-container' >
           <p className='media-section-title font-regular'>@weareseaforth</p>
